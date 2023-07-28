@@ -1,0 +1,22 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+        {
+          "src": "/api/(.*)",
+          "dest": "apps/backend/$1"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "apps/frontend/dist/$1"
+        }
+      ],
+    "env": {
+      "YOUR_ENV_VARIABLE": "value"
+    }
+  }
+  
