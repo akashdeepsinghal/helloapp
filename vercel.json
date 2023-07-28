@@ -1,12 +1,23 @@
 {
     "rewrites": [
-        {
-          "source": "/(.*)",
-          "destination": "/apps/frontend"
-        },
-        {
-            "source": "/api/(.*)",
-            "destination": "/apps/backend"
-          }        
-      ]
-}
+      {
+        "source": "/(.*)",
+        "destination": "/apps/frontend/$1"
+      },
+      {
+        "source": "/api/(.*)",
+        "destination": "/apps/backend/$1"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/apps/frontend/(.*)",
+        "dest": "/frontend/$1"
+      },
+      {
+        "src": "/apps/backend/(.*)",
+        "dest": "/backend/$1"
+      }
+    ],
+    "version": 2
+  }
