@@ -10,7 +10,7 @@ import { core } from '@backend/core';
 
 const app = express();
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/api/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/api', (req, res) => {
   res.send({ message: core() });
