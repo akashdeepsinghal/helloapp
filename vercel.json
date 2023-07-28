@@ -7,10 +7,13 @@
       {
         "source": "/assets/(.*)",
         "destination": "/apps/frontend/assets/$1"
-      },
+      }
+    ],
+    "routes": [
       {
-        "source": "/api/(.*)",
-        "destination": "/apps/backend/$1"
+        "src": "/api/(.*)",
+        "dest": "https://helloapp-rho.vercel.app/apps/backend/:1",
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"]
       }
     ]
   }
