@@ -1,16 +1,17 @@
 {
     "rewrites": [
-        {
-          "source": "/",
-          "destination": "/apps/frontend"
-        },
-        {
-            "source": "/assets/",
-            "destination": "/apps/frontend/assets/"
-          },        
-        {
+      {
+        "source": "/",
+        "destination": "/apps/frontend"
+      },
+      {
+        "source": "/assets/(.*)",
+        "destination": "/apps/frontend/assets/$1"
+      },
+      {
         "source": "/api/(.*)",
-        "destination": "/apps/backend"
-        }        
-      ]
-}
+        "destination": "/apps/backend/$1"
+      }
+    ]
+  }
+  
