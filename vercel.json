@@ -2,11 +2,11 @@
     "rewrites": [
       {
         "source": "/api",
-        "destination": "/apps/backend"
+        "destination": "/dist/apps/backend"
       },
       {
         "source": "/",
-        "destination": "/apps/frontend"
+        "destination": "/dist/apps/frontend"
       }
     ]
 }
