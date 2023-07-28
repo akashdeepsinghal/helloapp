@@ -6,7 +6,7 @@
         },
         {
             "source": "/assets/",
-            "destination": "/apps/frontend/assets"
+            "destination": "/apps/frontend/assets/"
           },        
         {
         "source": "/api/(.*)",
