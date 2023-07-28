@@ -5,6 +5,10 @@
           "destination": "/apps/frontend"
         },
         {
+            "source": "/assets/",
+            "destination": "/apps/frontend/assets"
+          },        
+        {
         "source": "/api/(.*)",
         "destination": "/apps/backend"
         }        
