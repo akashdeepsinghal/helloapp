@@ -8,11 +8,11 @@
     "routes": [
         {
           "src": "/api/(.*)",
-          "dest": "dist/backend/$1"
+          "dest": "dist/apps/backend/$1"
         },
         {
           "src": "/(.*)",
-          "dest": "dist/frontend/dist/$1"
+          "dest": "dist/apps/frontend/$1"
         }
       ],
     "env": {
