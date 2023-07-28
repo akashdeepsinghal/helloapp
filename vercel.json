@@ -3,6 +3,10 @@
         {
           "source": "/(.*)",
           "destination": "/apps/frontend"
-        }
+        },
+        {
+            "source": "/api/(.*)",
+            "destination": "/apps/backend"
+          }        
       ]
 }
