@@ -7,7 +7,7 @@ import Label from './label/label';
 export function App() {
   return (
     <div>
-        Hello
+        Hello 1
         <Label />
     </div>
   );
