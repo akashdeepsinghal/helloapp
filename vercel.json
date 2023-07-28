@@ -1,12 +1,12 @@
 {
-    "routes": [
+    "rewrites": [
       {
-        "src": "/api/:match*",
-        "dest": "../../dist/apps/backend/:match*"
+        "source": "/api/:match*",
+        "destination": "../../dist/apps/backend/:match*"
       },
       {
-        "src": "/:match*",
-        "dest": "../../dist/apps/frontend/:match*"
+        "source": "/:match*",
+        "destination": "../../dist/apps/frontend/:match*"
       }
     ]
 }
