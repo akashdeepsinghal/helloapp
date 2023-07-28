@@ -10,12 +10,12 @@
     "routes": [
         { "src": "/api/(.*)", "dest": "api/main.js" },
         {
-        "source": "/",
-        "destination": "/apps/frontend"
+        "src": "/",
+        "dest": "/apps/frontend"
         },
         {
-        "source": "/assets/(.*)",
-        "destination": "/apps/frontend/assets/$1"
+        "src": "/assets/(.*)",
+        "dest": "/apps/frontend/assets/$1"
         }
     ]    
 
