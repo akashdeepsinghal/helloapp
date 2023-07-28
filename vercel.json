@@ -2,11 +2,11 @@
     "rewrites": [
       {
         "source": "/api/:match*",
-        "destination": "../dist/apps/backend/:match*"
+        "destination": "/dist/apps/backend/:match*"
       },
       {
         "source": "/:match*",
-        "destination": "../dist/apps/frontend/:match*"
+        "destination": "/dist/apps/frontend/:match*"
       }
     ]
 }
