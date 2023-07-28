@@ -1,20 +1,12 @@
 {
-    "rewrites": [
-      {
-        "source": "/",
-        "destination": "/apps/frontend"
-      },
-      {
-        "source": "/assets/(.*)",
-        "destination": "/apps/frontend/assets/$1"
+    "functions": {
+      "api/main.js": {
+        "memory": 512, 
+        "maxDuration": 10
       }
-    ],
+    },
     "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "https://helloapp-rho.vercel.app/apps/backend/:1",
-        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"]
-      }
+      { "src": "/api/(.*)", "dest": "api/main.js" },
+      { "src": "/(.*)", "dest": "apps/frontend" }
     ]
   }
-  
