@@ -1,12 +1,12 @@
 {
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "../../dist/apps/backend/$1"
+        "src": "/api/:match*",
+        "dest": "../../dist/apps/backend/:match*"
       },
       {
-        "src": "/(.*)",
-        "dest": "../../dist/apps/frontend/$1"
+        "src": "/:match*",
+        "dest": "../../dist/apps/frontend/:match*"
       }
     ]
-  }
+}
