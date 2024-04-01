@@ -1,20 +1,12 @@
 {
   "version": 2,
+
   "functions": {
-    "api/main.js": {
+    "apps/backend/main.js": {
       "memory": 512,
       "maxDuration": 10
     }
   },
-  "builds": [
-    {
-      "src": "apps/api/package.json",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": "dist/apps/backend/**"
-      }
-    }
-  ],
 
   "routes": [
     {
