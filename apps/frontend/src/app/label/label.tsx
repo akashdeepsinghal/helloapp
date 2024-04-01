@@ -1,7 +1,8 @@
 /* eslint-disable-next-line */
-import { useEffect, useState } from 'react';
 
 export interface LabelProps {}
+
+import { useEffect, useState } from 'react';
 
 export function Label(props: LabelProps) {
   const [resp, setResp] = useState<any>([]);
