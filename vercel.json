@@ -1,24 +1,20 @@
 {
+  "functions": {
+    "api/main.js": {
+      "memory": 512,
+      "maxDuration": 10
+    }
+  },
 
-    "functions": {
-        "api/main.js": {
-        "memory": 512, 
-        "maxDuration": 10
-        }
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/apps/backend/main.js" },
+    {
+      "src": "/",
+      "dest": "/apps/frontend"
     },
-
-    "routes": [
-        { "src": "/api/(.*)", "dest": "api/main.js" },
-        {
-        "src": "/",
-        "dest": "/apps/frontend"
-        },
-        {
-        "src": "/assets/(.*)",
-        "dest": "/apps/frontend/assets/$1"
-        }
-    ]    
-
+    {
+      "src": "/assets/(.*)",
+      "dest": "/apps/frontend/assets/$1"
+    }
+  ]
 }
-
-  
