@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "dist/apps/backend/main.js": {
+    "api/main.js": {
       "memory": 512,
       "maxDuration": 10
     }
