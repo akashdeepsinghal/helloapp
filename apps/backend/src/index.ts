@@ -13,7 +13,8 @@ const app = express();
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.get('/api', (req, res) => {
-  res.send({ message: core() });
+  // res.send({ message: core() });
+  res.send({ message: 'testing' });
 });
 
 const port = process.env.PORT || 3333;
