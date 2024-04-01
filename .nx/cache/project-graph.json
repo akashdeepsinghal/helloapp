@@ -13699,6 +13699,16 @@
     "@helloapp/source": [
       {
         "source": "@helloapp/source",
+        "target": "npm:express",
+        "type": "static"
+      },
+      {
+        "source": "@helloapp/source",
+        "target": "npm:uuid",
+        "type": "static"
+      },
+      {
+        "source": "@helloapp/source",
         "target": "npm:@nx/jest",
         "type": "static"
       },
@@ -13715,11 +13725,6 @@
       {
         "source": "@helloapp/source",
         "target": "npm:axios",
-        "type": "static"
-      },
-      {
-        "source": "@helloapp/source",
-        "target": "npm:express",
         "type": "static"
       },
       {
@@ -13985,11 +13990,6 @@
       {
         "source": "@helloapp/source",
         "target": "npm:@nx/devkit",
-        "type": "static"
-      },
-      {
-        "source": "@helloapp/source",
-        "target": "npm:uuid",
         "type": "static"
       }
     ],
