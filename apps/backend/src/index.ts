@@ -17,8 +17,9 @@ app.get('/api', (req, res) => {
   res.send({ message: 'testing' });
 });
 
-const port = process.env.PORT || 3333;
+const port = 3333;
+console.log('port in backend:', port);
 const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
+  console.log(`Listening backend at http://localhost:${port}/api`);
 });
 server.on('error', console.error);

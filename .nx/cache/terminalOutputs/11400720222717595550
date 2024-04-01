@@ -1,5 +1,0 @@
-[36mvite v4.3.9 [32mbuilding for production...[36m[39m
-[2K[1Gtransforming (1) [2mindex.html[22m[2K[1Gtransforming (21) [2m../../node_modules/scheduler/cjs/scheduler.production.min.js[22m[2K[1G[32m✓[39m 34 modules transformed.
-[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2m../../dist/apps/frontend/[22m[32mindex.html                [39m[1m[2m  0.41 kB[22m[1m[22m[2m │ gzip:  0.27 kB[22m
-[2m../../dist/apps/frontend/[22m[2massets/[22m[36mindex-fa7b41de.js  [39m[1m[2m148.32 kB[22m[1m[22m[2m │ gzip: 47.97 kB[22m
-[32m✓ built in 470ms[39m
