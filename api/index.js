@@ -16,6 +16,16 @@
 
 // module.exports = app;
 
-export default (req, res) => {
-  res.send({ message: 'testing' });
-};
+// export default (req, res) => {
+//   res.send({ message: 'testing' });
+// };
+
+import express from 'express';
+const app = express();
+
+const port = process.env.PORT || 3333;
+app.get('/', (req, res) => res.send('Express on Vercel'));
+
+app.listen(port, () => console.log('Server ready on port:' + port));
+
+module.exports = app;
