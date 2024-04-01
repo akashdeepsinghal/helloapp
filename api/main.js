@@ -1,7 +1,5 @@
 const express = require('express');
 
-import { core } from '@backend/core';
-
 const { v4 } = require('uuid');
 
 app.get('/api', (req, res) => {
