@@ -1,17 +1,15 @@
 {
   "version": 2,
-
   "functions": {
-    "api/main.js": {
+    "/apps/backend/main.js": {
       "memory": 512,
       "maxDuration": 10
     }
   },
-
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "apps/backend/$1"
+      "dest": "/apps/backend/main.js"
     },
     {
       "src": "/",
